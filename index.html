@@ -100,6 +100,17 @@ footer a{color:rgba(255,255,255,0.4);text-decoration:none}
 .sticky-call{background:#1a5c2a}
 .sticky-wa{background:#25D366}
 
+/* FAQ */
+.faq-section{background:var(--cream)}
+.faq-list{max-width:780px;margin:0 auto}
+.faq-item{border:1px solid #e8e4d8;border-radius:8px;margin-bottom:12px;overflow:hidden;background:#fff}
+.faq-q{width:100%;background:none;border:none;text-align:left;padding:20px 24px;font-size:15px;font-weight:500;color:var(--navy);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px;font-family:'Inter',sans-serif}
+.faq-q:hover{background:rgba(201,168,76,0.06)}
+.faq-q .faq-icon{color:var(--gold);font-size:18px;flex-shrink:0;transition:transform .3s}
+.faq-item.open .faq-icon{transform:rotate(45deg)}
+.faq-a{display:none;padding:0 24px 20px;font-size:14px;color:#555;line-height:1.7}
+.faq-item.open .faq-a{display:block}
+
 /* PRIVACY */
 .privacy-modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.6);z-index:9999;align-items:center;justify-content:center;padding:16px}
 .privacy-modal.open{display:flex}
@@ -125,12 +136,12 @@ footer a{color:rgba(255,255,255,0.4);text-decoration:none}
 </nav>
 
 <section class="hero">
-  <div class="hero-bg"><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photoreference=Ab43m-vBP5cAwRvtEIgBKvC4CNQ0oovyM0E42sdUSY7E4VY2aaPJo7PjreC92pwncvfJn7qsl6GW6JmBiSmkKM7tOH2mk7j1rAvNbcb4PW4GCru-p8T7DwDMsm1NTycPOjhKeA1dSB6-o9rn2zdiRqMbSWQlukWEx4Eh2e0I2_Lc0CaZFI9csEa6dqS8SS9j90vb6Kx8aTMsPuvErFqOE1c6ud-QYtBU2od3tciVXZf3J5_P0BtjqBTbTvqreCvhbNM3PqxXxIYsuxQl4DuzI1SJRlC-A3oj3Egq2ftXSPp1uXfK2nUvMHRn18tOCje1S1Aqycw3F5i6U8rRbZKQ3IR8uygidvxhDJ0wja2HEaCWKMkZNk0kvcz0PeZMC4-5ii8iCc5jZxl-gC5mCvuInWx_OZ8JjUTJHeIS3fYvW5L1iEldTEroYpwyhcZC08e4TBeP&key=AIzaSyCYXbAb5oATfgJRzDY7v7_wNhQ6F7PltAM" alt="Poggi Avv. Silvia" style="width:100%;height:100%;object-fit:cover;opacity:0.35"></div>
+  <div class="hero-bg"></div>
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <div class="hero-badge">Avvocato · Bologna</div>
     <h1>Poggi Avv. Silvia</h1>
-    <p class="hero-sub">⭐ 4.7 su Google · 11 recensioni</p>
+    <p class="hero-sub">Professionista a Bologna</p>
     <p class="hero-addr">📍 V. Augusto Murri,  61/2, 40137 Bologna</p>
     <a href="tel:+39 051 407 2172" class="btn-primary">📞 Chiama ora</a>
   </div>
@@ -145,14 +156,14 @@ footer a{color:rgba(255,255,255,0.4);text-decoration:none}
         <p style="margin-bottom:0">Lo studio legale <strong>Poggi Avv. Silvia</strong> opera a Bologna con esperienza nella consulenza e nell'assistenza legale. Offriamo un servizio su misura, attento alle esigenze del cliente e orientato al risultato.</p>
         <p>La nostra priorità è accompagnare ogni cliente con competenza e dedizione, garantendo chiarezza, trasparenza e riservatezza in ogni fase del percorso.</p>
         <div class="about-stats">
-          <div class="stat-box"><div class="stat-num">4.7</div><div class="stat-label">Valutazione Google</div></div>
+          
           <div class="stat-box"><div class="stat-num">11</div><div class="stat-label">Recensioni</div></div>
           <div class="stat-box"><div class="stat-num">100%</div><div class="stat-label">Dedizione</div></div>
           <div class="stat-box"><div class="stat-num">Bologna</div><div class="stat-label">Sede</div></div>
         </div>
       </div>
       <div class="about-img">
-        <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=700&photoreference=Ab43m-shaUBOLOuleTpZQMaYjC613P2Gpnowtzd2NJEbi2CWfqkLCRzvjFG6YCZT2LTsJHuQr1u1bfmbyx4at6BiMtAWDafyhwRjBxfCB1PI1ib2Po6Ajri3QjBGyYAuN1P-ZipfmL0iwFWZZ86k7J46byIxJZXlUaReQG2ddbjLVWZfLp5ZSQWSig7AyHeprCelRfs2tnnK3R_PD6kvmYsTax3GFkYe9rcQ4qIAa_7z70_at4gTVIhoB6nowuaUERSgl6o172UMlVaWG5KI2vK1TRqiv1CSYIx48GnHU0aMLKxwlQE14WkMDQBTKRFzoNBwkEj3gNO_kKbeSWPoGHDcG2y1pnOLMuZAcm3qHwkcLtHj7IapzDOwNA-FtgOTRBoC-QZehmK6myEUo1z5PbfTKsFueFaZW5Tk4zoeI2Dxixk515mFD8Q6J1qDRjZY9Q&key=AIzaSyCYXbAb5oATfgJRzDY7v7_wNhQ6F7PltAM" alt="Poggi Avv. Silvia">
+        <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:var(--navy);color:var(--gold);font-family:Cormorant Garamond,serif;font-size:4rem">⚖</div>
       </div>
     </div>
   </div>
@@ -162,111 +173,31 @@ footer a{color:rgba(255,255,255,0.4);text-decoration:none}
   <div class="container">
     <h2 class="section-title">Servizi offerti</h2>
     <div class="services-grid"><div class="service-item"><div class="service-icon">⚖</div><span>Consulenza legale</span></div><div class="service-item"><div class="service-icon">⚖</div><span>Diritto civile</span></div><div class="service-item"><div class="service-icon">⚖</div><span>Diritto del lavoro</span></div><div class="service-item"><div class="service-icon">⚖</div><span>Diritto penale</span></div><div class="service-item"><div class="service-icon">⚖</div><span>Recupero crediti</span></div><div class="service-item"><div class="service-icon">⚖</div><span>Contrattualistica</span></div></div>
-    <div class="photo-grid"><div class="photo-item" style="background-image:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=600&photoreference=Ab43m-shaUBOLOuleTpZQMaYjC613P2Gpnowtzd2NJEbi2CWfqkLCRzvjFG6YCZT2LTsJHuQr1u1bfmbyx4at6BiMtAWDafyhwRjBxfCB1PI1ib2Po6Ajri3QjBGyYAuN1P-ZipfmL0iwFWZZ86k7J46byIxJZXlUaReQG2ddbjLVWZfLp5ZSQWSig7AyHeprCelRfs2tnnK3R_PD6kvmYsTax3GFkYe9rcQ4qIAa_7z70_at4gTVIhoB6nowuaUERSgl6o172UMlVaWG5KI2vK1TRqiv1CSYIx48GnHU0aMLKxwlQE14WkMDQBTKRFzoNBwkEj3gNO_kKbeSWPoGHDcG2y1pnOLMuZAcm3qHwkcLtHj7IapzDOwNA-FtgOTRBoC-QZehmK6myEUo1z5PbfTKsFueFaZW5Tk4zoeI2Dxixk515mFD8Q6J1qDRjZY9Q&key=AIzaSyCYXbAb5oATfgJRzDY7v7_wNhQ6F7PltAM')"></div><div class="photo-item" style="background-image:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=600&photoreference=Ab43m-tLruTWsfD8hcJLbEF1sEjwGSYMlujk9N9Y6A5ZGAj56DDIA1TXvI_DuVLV4k7jTg8OP_nDyTSzPvgrilHe222jYJhCPesNWLmD-CLMtwKqzdxcK22A6kyKDO8JAs3JFN4dQNhK52Au5gs6BpbEN58--DrjYnXyD6ESzDdc6uwVtO8Szg5ddkLdHpDCNrF3Rbxobalw5qW0ytOvtb3nWTvayTGdP6We6TksY4DeskLXgKB0nyTGoeBD2DTcVjT8koPDqWHIPiVQntPMOVa2pzfEW9AficGcSfWbb1dC8tHTOe_sC_P7gOZVmZ2G3Y85mASVeS-zLty9Fs7NNLp8Ta2FtZl5VHiJWXFw02YAKC9oLtKsP5E0i3pBkdHBK5NwwFfWe1P8ta0KYMSeJo5HLTmI9QVwFCOSVReechdA8WC2p1WMhQAEZAOJfCexPlwY&key=AIzaSyCYXbAb5oATfgJRzDY7v7_wNhQ6F7PltAM')"></div><div class="photo-item" style="background-image:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=600&photoreference=Ab43m-tmHkeBexH-sPyyOZLVgxwQ3q9ALXfwilLMqn72oFRKwTTgtdP3VZaM2Si9M1MlrgQ6DNMwtotbKqiGfPieEW5KYdrx2QrfBy72x4GzF5kbRTlQLVuKg-1XcwA8Jb9i4eS-oUrpyz1FXcl-WMY4pC6W-V4YoFGKJxHigJZnrJ41WNglzC7L5mh1KNPQPzPB1qxsQ7Q6Jn-z7LK2QL7DxXdjWcnNE1QIRMINAehQtHweiLZXvmnDJh43OqC9C4jjS-xVqbV2RMVVZ7OvWs6UwEg-j7dqOMsUUZFlMhAme74h04Em7x7Mdt76u7ROpil7o8caz5ah8_fXuKmfhkEDL_8f49_atqxDQCQ-E2u4JL_2bcL6Cr_xOyo2s3TdMFBuSIeaUzBPvnO3ZOLPJIFrSw_RlzfjkIdV0vfZ_yG_LC-mPm8u3Z5t3YHZG8UL9g&key=AIzaSyCYXbAb5oATfgJRzDY7v7_wNhQ6F7PltAM')"></div><div class="photo-item" style="background-image:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=600&photoreference=Ab43m-sA3b5apDn_4BwUm8fFmYn720tPsWYYS-4uLjwwOmvTZioPjVbpKMs0gyELsYleGJxH6OQA9BSGvscMdQ81Qv3n9z3Kolxd1wjR3Kfy696tNGuuzZgEvmMuP3xZwWGVoJY0a4MMopKJ-G7Ufojgjv5mUvy5RBSIRb0IXOp-RMwy59nExTbXtgk2yZkxz4H23j-_pJVeot8T2y6MnX9IDKiMHr7xZuqCgKHTfMrh2VLW_PaHa_rOu3m42FsFcJhh2myzYUXrf8xJ3bBs39H-dlI6ogwvqAlMac2kDQtEEIXzIJjFeUQHoUXNZtwPcN2ZCbanmuCzxOAOHCs2HeHPCUCq2d3fYVjKJ5PVne_AYBi9laxOhO8jq-qmtiMFgH0YI_FLsKjcKPp1MesDvm0lHGPcnhoa6lEyn-HKd9qfdyS-tCYndnGHet_IeOecJBEg&key=AIzaSyCYXbAb5oATfgJRzDY7v7_wNhQ6F7PltAM')"></div></div>
+    
   </div>
 </section>
 
-<section class="section reviews-section">
+
+
+<section class="section faq-section">
   <div class="container">
-    <h2 class="section-title">Cosa dicono i clienti</h2>
-    <div class="rating-summary">
-      <div class="big-rating">4.7</div>
-      <div>
-        <span style="color:#c9a84c;font-size:22px">★★★★½<span style="color:#ccc"></span></span>
-        <div style="color:#666;font-size:14px;margin-top:4px">Basato su 5 recensioni Google</div>
-      </div>
-    </div>
-    <div class="reviews-grid" id="revGrid">
-      <div class="rev-card">
-  <div style="display:flex;gap:10px;align-items:center;margin-bottom:8px">
-    <img src="https://lh3.googleusercontent.com/a-/ALV-UjVixTyAORuGUQ7UC5jP1rx0N7S1Bcv-_4EAOR-jfiympqkC3jcKCw=s128-c0x00000000-cc-rp-mo" style="width:40px;height:40px;border-radius:50%;object-fit:cover">
-    <div>
-      <div style="font-weight:600;font-size:14px;color:#1a2744">ANDREI ANECHITOAIE</div>
-      <div style="font-size:12px;color:#666">3 mesi fa</div>
-    </div>
-  </div>
-  <div style="color:#c9a84c;font-size:16px;margin-bottom:6px">★★★★★</div>
-  <p style="font-size:14px;color:#444;line-height:1.5;margin:0">L’Avv. Poggi si è dimostrata molto professionale, competente e disponibile.
-Ha seguito la mia pratica con attenzione e chiarezza, spiegandomi ogni passaggio. La consiglio senza esitazioni.</p>
-  <div style="position:absolute;bottom:12px;right:12px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="20" height="20" style="flex-shrink:0">
-<path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/>
-<path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/>
-<path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/>
-<path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.18 1.48-4.97 2.31-8.16 2.31-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/>
-<path fill="none" d="M0 0h48v48H0z"/></svg></div>
-</div><div class="rev-card">
-  <div style="display:flex;gap:10px;align-items:center;margin-bottom:8px">
-    <img src="https://lh3.googleusercontent.com/a-/ALV-UjVy5mWGHzAFJFG3UPj85Wax9iV82rIgt1iAKR6EVMvks3WiAXsn=s128-c0x00000000-cc-rp-mo-ba3" style="width:40px;height:40px;border-radius:50%;object-fit:cover">
-    <div>
-      <div style="font-weight:600;font-size:14px;color:#1a2744">Ines Lopomo</div>
-      <div style="font-size:12px;color:#666">2 anni fa</div>
-    </div>
-  </div>
-  <div style="color:#c9a84c;font-size:16px;margin-bottom:6px">★★★★★</div>
-  <p style="font-size:14px;color:#444;line-height:1.5;margin:0">Consiglio vivamente per l'attenzione e la professionalità e dedizione con cui ha seguito la mia causa con gratuito patrocinio.
-Ha dimostrato sempre massima competenza e preparazione grazie alla quale ha ottenuto giustizia e rispetto per eventuali accordi tra le parti.
-Onorata di essere seguita da un...</p>
-  <div style="position:absolute;bottom:12px;right:12px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="20" height="20" style="flex-shrink:0">
-<path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/>
-<path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/>
-<path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/>
-<path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.18 1.48-4.97 2.31-8.16 2.31-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/>
-<path fill="none" d="M0 0h48v48H0z"/></svg></div>
-</div><div class="rev-card">
-  <div style="display:flex;gap:10px;align-items:center;margin-bottom:8px">
-    <img src="https://lh3.googleusercontent.com/a-/ALV-UjXk9WG2JiYt4HeO_Gcj-1jujtKBUr-iD2cA2Rc_gGYZlTm_I94n=s128-c0x00000000-cc-rp-mo" style="width:40px;height:40px;border-radius:50%;object-fit:cover">
-    <div>
-      <div style="font-weight:600;font-size:14px;color:#1a2744">ramonyk78</div>
-      <div style="font-size:12px;color:#666">3 mesi fa</div>
-    </div>
-  </div>
-  <div style="color:#c9a84c;font-size:16px;margin-bottom:6px">★★★★★</div>
-  <p style="font-size:14px;color:#444;line-height:1.5;margin:0">Professionalità e cordialità.., grazie infinite 🙏🏻🙏🏻🙏🏻</p>
-  <div style="position:absolute;bottom:12px;right:12px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="20" height="20" style="flex-shrink:0">
-<path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/>
-<path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/>
-<path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/>
-<path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.18 1.48-4.97 2.31-8.16 2.31-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/>
-<path fill="none" d="M0 0h48v48H0z"/></svg></div>
-</div><div class="rev-card">
-  <div style="display:flex;gap:10px;align-items:center;margin-bottom:8px">
-    <img src="https://lh3.googleusercontent.com/a/ACg8ocIauEonm6khR3LW7R8i4eHvA-QDpkgKwh4r_oJ9ZhXcL05wIg=s128-c0x00000000-cc-rp-mo" style="width:40px;height:40px;border-radius:50%;object-fit:cover">
-    <div>
-      <div style="font-weight:600;font-size:14px;color:#1a2744">Vic Tor</div>
-      <div style="font-size:12px;color:#666">13 giorni fa</div>
-    </div>
-  </div>
-  <div style="color:#c9a84c;font-size:16px;margin-bottom:6px">★★★★★</div>
-  <p style="font-size:14px;color:#444;line-height:1.5;margin:0">Consiglio vivamente l’avvocatessa Silvia Poggi a chiunque abbia bisogno di assistenza legale.
-Abbiamo apprezzato tantissimo la sua disponibilità, serietà, professionalità e puntualità. È stata sempre precisa e chiara nelle spiegazioni,ha seguito  il nostro caso con grande attenzione e scrupolosità. ...</p>
-  <div style="position:absolute;bottom:12px;right:12px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="20" height="20" style="flex-shrink:0">
-<path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/>
-<path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/>
-<path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/>
-<path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.18 1.48-4.97 2.31-8.16 2.31-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/>
-<path fill="none" d="M0 0h48v48H0z"/></svg></div>
-</div><div class="rev-card">
-  <div style="display:flex;gap:10px;align-items:center;margin-bottom:8px">
-    <img src="https://lh3.googleusercontent.com/a-/ALV-UjXyAHeJg5A8jy-QiR_Y-CkJan5c6ZXBg7N41zzLjhJX0BWT7D4dwQ=s128-c0x00000000-cc-rp-mo" style="width:40px;height:40px;border-radius:50%;object-fit:cover">
-    <div>
-      <div style="font-weight:600;font-size:14px;color:#1a2744">Gino Tour Srl</div>
-      <div style="font-size:12px;color:#666">23 giorni fa</div>
-    </div>
-  </div>
-  <div style="color:#c9a84c;font-size:16px;margin-bottom:6px">★★★★★</div>
-  <p style="font-size:14px;color:#444;line-height:1.5;margin:0">Ci siamo affidati per la gestione dei sinistri della nostra società: affidabile, professionale, competente. Lo consigliamo</p>
-  <div style="position:absolute;bottom:12px;right:12px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="20" height="20" style="flex-shrink:0">
-<path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/>
-<path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/>
-<path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/>
-<path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.18 1.48-4.97 2.31-8.16 2.31-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/>
-<path fill="none" d="M0 0h48v48H0z"/></svg></div>
-</div>
-    </div>
-    <div class="rev-nav">
-      <button onclick="scrollRevs(-1)" class="rev-btn">&#8592;</button>
-      <button onclick="scrollRevs(1)" class="rev-btn">&#8594;</button>
-    </div>
+    <h2 class="section-title">Domande frequenti</h2>
+    <div class="faq-list"><div class="faq-item">
+  <button class="faq-q" onclick="toggleFaq(this)"><span>Come posso fissare un appuntamento?</span><span class="faq-icon">+</span></button>
+  <div class="faq-a">Puoi contattarci tramite telefono o WhatsApp per fissare un primo colloquio conoscitivo. Risponderemo nel più breve tempo possibile.</div>
+</div><div class="faq-item">
+  <button class="faq-q" onclick="toggleFaq(this)"><span>Quali aree del diritto trattate?</span><span class="faq-icon">+</span></button>
+  <div class="faq-a">Lo studio opera principalmente in diritto civile, diritto del lavoro, diritto penale, diritto commerciale e recupero crediti.</div>
+</div><div class="faq-item">
+  <button class="faq-q" onclick="toggleFaq(this)"><span>Quanto costa una consulenza legale?</span><span class="faq-icon">+</span></button>
+  <div class="faq-a">Il costo varia in base alla complessità del caso e al tipo di prestazione richiesta. Il primo colloquio serve a valutare la situazione e fornire un preventivo chiaro.</div>
+</div><div class="faq-item">
+  <button class="faq-q" onclick="toggleFaq(this)"><span>È possibile ricevere assistenza anche a distanza?</span><span class="faq-icon">+</span></button>
+  <div class="faq-a">Sì, è possibile concordare consulenze in videochiamata o per via telematica, per chi non può recarsi fisicamente in studio.</div>
+</div><div class="faq-item">
+  <button class="faq-q" onclick="toggleFaq(this)"><span>Come funziona la prima consulenza?</span><span class="faq-icon">+</span></button>
+  <div class="faq-a">Il primo incontro è un colloquio in cui illustrate il vostro problema e ricevete una valutazione professionale iniziale, senza impegno.</div>
+</div></div>
   </div>
 </section>
 
@@ -331,6 +262,13 @@ L.marker([44.4815773,11.3602561],{icon}).addTo(map).bindPopup('<b>Poggi Avv. Sil
 
 function scrollRevs(dir){
   document.getElementById('revGrid').scrollBy({left:dir*340,behavior:'smooth'});
+}
+
+function toggleFaq(btn){
+  var item=btn.closest('.faq-item');
+  var isOpen=item.classList.contains('open');
+  document.querySelectorAll('.faq-item.open').forEach(function(el){el.classList.remove('open');});
+  if(!isOpen)item.classList.add('open');
 }
 </script>
 </body></html>
