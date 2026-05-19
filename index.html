@@ -10,7 +10,7 @@
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 :root{--navy:#1a2744;--gold:#c9a84c;--gold-light:#e8c96a;--cream:#faf8f3;--text:#2d3748}
-body{font-family:'Inter',sans-serif;color:var(--text);background:#fff}
+body{font-family:'Inter',sans-serif;color:var(--text);background:#fff;padding-top:40px}
 
 /* HERO */
 .hero{position:relative;height:100vh;min-height:580px;background:var(--navy);display:flex;align-items:center;justify-content:center;overflow:hidden}
@@ -85,9 +85,11 @@ nav.scrolled{background:var(--navy);box-shadow:0 2px 20px rgba(0,0,0,0.3)}
 .contact-value a{color:var(--gold);text-decoration:none}
 
 /* BANNER */
-.banner{background:linear-gradient(135deg,var(--navy),#2c3e6e);padding:80px 24px;text-align:center;color:#fff}
-.banner h2{font-family:'Cormorant Garamond',serif;font-size:clamp(1.6rem,3vw,2.6rem);font-weight:600;margin-bottom:16px}
-.banner p{color:rgba(255,255,255,0.7);margin-bottom:32px;font-size:16px}
+#buy-banner{position:fixed;top:0;left:0;width:100%;background:#000;color:#fff;z-index:9999;padding:10px 24px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+#buy-banner p{font-size:14px;margin:0}
+#buy-banner a.stripe{background:#ff4d00;color:#fff;text-decoration:none;padding:8px 18px;border-radius:4px;font-size:13px;font-weight:500;white-space:nowrap;flex-shrink:0}
+@media(max-width:600px){#buy-banner .dt{display:none}}
+@media(min-width:601px){#buy-banner .mob{display:none}}
 
 /* FOOTER */
 footer{background:#111827;color:rgba(255,255,255,0.5);padding:32px 24px;text-align:center;font-size:13px}
@@ -123,7 +125,7 @@ footer a{color:rgba(255,255,255,0.4);text-decoration:none}
 </nav>
 
 <section class="hero">
-  <div class="hero-bg"><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photoreference=Ab43m-uPidJUksMHiF5d91OqczlZnEuQ34VlGsujRhTbma9Nfs3hP_eVOLIYu60qa9_LXNwqAAiNjIiBcTwi62jIflSqn0vX3Imakp722PTv31Lvd6LSUy38i5mdR_lXTHxir5r1Ht-1bYkbgR4hu6U7sG95zj3yjyiXPzw569CaNMFwvk6KY4XLBYeF98Jo-dzfvLwufGTPj4GqUxWq2o2kphSYdO7S-hmUKRrF1XYNN27GS33v-zAJpVE539lM9cex_cVRzkcpZIu54UNtrUraHUA-9jHjXhYi38zkV1_KSYHGU_VVmu469TDQt7JbUDxu7zJWvB0VlSiAovSF0Cahv5y4_RqZDnhLtkyuU7AOSOiA_VSj2N_Nu8wBeGp2Z2Fc4ksx8Yc3ABU1dW99n2jmYksl2s-ppJxLoy7G-13SbG_WLKSbG3K0TOsznWg8q55u&key=AIzaSyCYXbAb5oATfgJRzDY7v7_wNhQ6F7PltAM" alt="Poggi Avv. Silvia" style="width:100%;height:100%;object-fit:cover;opacity:0.35"></div>
+  <div class="hero-bg"><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photoreference=Ab43m-sP4Sisy_dA54dWSdbtL1B-nfqLvfw7mH47bi-0hcuaJY0ngd3tKmGSfmvcwhPUBlXUZIKg7kgHobumm4XSQLAI4ly_V0en9E6sm_Cuff4zbBcD5-1YXcPes0qlLR9qeRgU6H_XpgIMrg3jmdZ3iqj3wHHDyjbxfhBHgXTFrYdQWjFZI-RQDodvaHDdJkWor6T6IqAfutf0frKJaDurJBEcYhNjnRAO-q59hKvabTlEE_-86ZazIf7Ib7RgaIiY22vkHRQGryKDKqrZvYgyS5C1NEV7ylt6Jh2tjnkRZs7XiS_dr1RE9yRmY4TXuJyQkAwtM9pAdOEIrCA4ucm7ds3YTl-5JYrO8y_o80xk8co5jynHtk-FMWC9ZvShD6-XEpHRz2dkPkVieioS4u79c1jR7QQ1loP9AaUG7URwlJr_cq8F7jCWeZyTUHQrQ3vP&key=AIzaSyCYXbAb5oATfgJRzDY7v7_wNhQ6F7PltAM" alt="Poggi Avv. Silvia" style="width:100%;height:100%;object-fit:cover;opacity:0.35"></div>
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <div class="hero-badge">Avvocato · Bologna</div>
@@ -150,7 +152,7 @@ footer a{color:rgba(255,255,255,0.4);text-decoration:none}
         </div>
       </div>
       <div class="about-img">
-        <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=700&photoreference=Ab43m-s5a-3RGZDjSKOSvqyqHn6QZgAECEC5cDlihs5zsMBr8jmtbYO0VclLSTNYgG7oZFs8A73F6a6NNmuWkeC9pUKeGIQRP4bqTRChuvQcz1cf6IBmJAsYH83RjbI3DMd5-36L9Wn0bgCUQ60yAkzMuCfpOcJmrK8mP6wSs3syVCsIMVUopD3vnU9lpaeI_QTENL1g_S2SA0BOuTdCrlPmlOEzCkNV1GfXUpgHfRtD68SjZxy9s_I8IM2L09AW-JF-150GadxRVsrG-_k2QXZ3ZGYlpMocR6W1diLvCBmSkdH1nIXG93UXcnmfBGnwXkpr_sRZfKKC3LB-aYEbG2PfpEzlNGfojVHlxZXV7eEy0JXnPxoLXFu6GDDSyxLIFfpovhcTXOGXynSVBEWYRnaCO0YTvwMnCLLGQXCdq9PLySmQGB2S44bqFU5UmYyVHQ&key=AIzaSyCYXbAb5oATfgJRzDY7v7_wNhQ6F7PltAM" alt="Poggi Avv. Silvia">
+        <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=700&photoreference=Ab43m-s-0XMc9ZRt8u2242lRhkNQLFatSzF9Sy7JZl00xN8mAqlxYMWhiN2fuIw_rKowHH0SBXn65R1mJmyjSvFm7ZpvUGD7nNFdgsCZXyBjjXIa7L2MxJ67ie2c-88HZyM62MHc6XUF0uiyz3C8QWoQnxP-cFGXRDTszZjeGumgnbi3QzzLUXKqDrO_GrjzshOTG34fpqvCzdHZHcaKjp_UOsEGaSKHES-td_XzieJVAWuecKuxKoiN1tkxZgNGp8hTM7UT3ZhXc6uBgU3pR-Icq9YCglJibRKAEbftv9J7a547XyL6_xWyGy7_BBqKl6qxtqX-r8L6vy5twI_9ZPIZ1mh_GOax7z0n3FH2ZlL7L62ybkHBQ-ygv79H6J-rFg6G38sEOSMK7Nyf2hFjNzIwKOosPXW9Vsv3bzLOj7vO53sgdi5KEjr9a1-dhO_S8g&key=AIzaSyCYXbAb5oATfgJRzDY7v7_wNhQ6F7PltAM" alt="Poggi Avv. Silvia">
       </div>
     </div>
   </div>
@@ -160,7 +162,7 @@ footer a{color:rgba(255,255,255,0.4);text-decoration:none}
   <div class="container">
     <h2 class="section-title">Servizi offerti</h2>
     <div class="services-grid"><div class="service-item"><div class="service-icon">⚖</div><span>Consulenza legale</span></div><div class="service-item"><div class="service-icon">⚖</div><span>Diritto civile</span></div><div class="service-item"><div class="service-icon">⚖</div><span>Diritto del lavoro</span></div><div class="service-item"><div class="service-icon">⚖</div><span>Diritto penale</span></div><div class="service-item"><div class="service-icon">⚖</div><span>Recupero crediti</span></div><div class="service-item"><div class="service-icon">⚖</div><span>Contrattualistica</span></div></div>
-    <div class="photo-grid"><div class="photo-item" style="background-image:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=600&photoreference=Ab43m-s5a-3RGZDjSKOSvqyqHn6QZgAECEC5cDlihs5zsMBr8jmtbYO0VclLSTNYgG7oZFs8A73F6a6NNmuWkeC9pUKeGIQRP4bqTRChuvQcz1cf6IBmJAsYH83RjbI3DMd5-36L9Wn0bgCUQ60yAkzMuCfpOcJmrK8mP6wSs3syVCsIMVUopD3vnU9lpaeI_QTENL1g_S2SA0BOuTdCrlPmlOEzCkNV1GfXUpgHfRtD68SjZxy9s_I8IM2L09AW-JF-150GadxRVsrG-_k2QXZ3ZGYlpMocR6W1diLvCBmSkdH1nIXG93UXcnmfBGnwXkpr_sRZfKKC3LB-aYEbG2PfpEzlNGfojVHlxZXV7eEy0JXnPxoLXFu6GDDSyxLIFfpovhcTXOGXynSVBEWYRnaCO0YTvwMnCLLGQXCdq9PLySmQGB2S44bqFU5UmYyVHQ&key=AIzaSyCYXbAb5oATfgJRzDY7v7_wNhQ6F7PltAM')"></div><div class="photo-item" style="background-image:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=600&photoreference=Ab43m-u-OcUBzqj-_5yeOOHh-GACf4DDWvYO1mnxfPVdT6BqyVKvP7S37u5HSI2bQ_u_F2eeZwEVtAF46PPC3KaZw2IjzdHh6rzi_hlVxTQteAp6nCZl51h6P--6-cO7rAPVoIi3E3HMWkcoLhvVlQ_lu1yw110rrGLgcp05_OL5Do_AlvN7D_qzwHJNP-b0lBLZwk6yjzqhpZFTyR-P7n5OMqDqTsY48Xql1RsYw5NBdDPVpG_qT_mNb_9QC7MA6xPojsOWXgOETkQhDGpefoN-9JA6LnFGam5RKUncg_-DuC-bZAvv1taY59AiOiFFuU5WSYANTKG7WDunWNADpOAbh5hGCaXNAWs2vwFOJtMDPnp29jbYSJ-Jj6QWq3nhgFjwSvQ9GcP8GRgLH0isVch2TCjSjAYL7jq0gm_pcxSg9dGO5kSxTGqsVDOtZ47z8eyj&key=AIzaSyCYXbAb5oATfgJRzDY7v7_wNhQ6F7PltAM')"></div><div class="photo-item" style="background-image:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=600&photoreference=Ab43m-utUiK53fIE2uewbPLec6suHmzwv4d2szOIUKifclJeSvVnlQ-PYSdGToaUifDgc5PUu5PUN_Lh_CEvk4gn0e8rF3bqaELUwMZ7aC9QAMZmHuyTQ6ltQKhNOtOq5YX44sOlYT_kUVsF-SYEt2MytZACcEcB8Mi73ndgRC1Xu4HxLBNPtya-XDWVUAa1vLvnCth8KFUqO9WEiaaJMDsCW9_BMJ-6KAnhQWU-HkTKz-mEDmwiLsLUxMgBlc2gZk2-zrs3JAhL3VjIxQJj29vXrEEMeUs8XL-Mk_dAlhe-UQ-fEjegr6YFPWB22UBCi9gn0JqlsWasOLtcxUgcaFHAFsVbt51HMCq1HjOr0ahCCiykWc7icx_zh10lERB8CZWqUXSZ68xpIKyJB8MHKXAaD2ZmjRVMogx6Z7LrfuQVfkTaFf29VnV-JunqHFfwNA&key=AIzaSyCYXbAb5oATfgJRzDY7v7_wNhQ6F7PltAM')"></div><div class="photo-item" style="background-image:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=600&photoreference=Ab43m-vT2SE21SzPtMtjIIJytPyxXCRQRxxWAH3e0FJ3tQQXHRvyCVwQMYQ9Mowfm9Igu4k88RlDt6F_-7O6BLoXiRiRSOMevZefNbg0BzOZAbhGfH2L-VaDQRRWsgmLM348KzXwoejoN7HmDHyv7NbtOTbNb7Fl20Ok7FgGoNW4FjvSwm6rv7KRaQfpIQg69gchRR-K7WMNIy0Bih1GYDjdA8a0BaaKjcmamQBgoUwgnbayon01cVUQs_ZS9po_WH7_ddq7pFugqADAw_2WG4f8NAJvJcSUGrjB9IwjZv7orzeXCpHQtonAgoz2S9abN4v2I-KKXW5oXEo7Wve-enhFYzBMhPbKyvF8sh2UZ1v1YC86chqk2XgxTjKyWSzulZKLhHsznSfNINICKpUS_RYovKOSp0PIG5YjuKkmcGJcvi4STIHqBeCU_hEVX0lK9LbO&key=AIzaSyCYXbAb5oATfgJRzDY7v7_wNhQ6F7PltAM')"></div></div>
+    <div class="photo-grid"><div class="photo-item" style="background-image:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=600&photoreference=Ab43m-s-0XMc9ZRt8u2242lRhkNQLFatSzF9Sy7JZl00xN8mAqlxYMWhiN2fuIw_rKowHH0SBXn65R1mJmyjSvFm7ZpvUGD7nNFdgsCZXyBjjXIa7L2MxJ67ie2c-88HZyM62MHc6XUF0uiyz3C8QWoQnxP-cFGXRDTszZjeGumgnbi3QzzLUXKqDrO_GrjzshOTG34fpqvCzdHZHcaKjp_UOsEGaSKHES-td_XzieJVAWuecKuxKoiN1tkxZgNGp8hTM7UT3ZhXc6uBgU3pR-Icq9YCglJibRKAEbftv9J7a547XyL6_xWyGy7_BBqKl6qxtqX-r8L6vy5twI_9ZPIZ1mh_GOax7z0n3FH2ZlL7L62ybkHBQ-ygv79H6J-rFg6G38sEOSMK7Nyf2hFjNzIwKOosPXW9Vsv3bzLOj7vO53sgdi5KEjr9a1-dhO_S8g&key=AIzaSyCYXbAb5oATfgJRzDY7v7_wNhQ6F7PltAM')"></div><div class="photo-item" style="background-image:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=600&photoreference=Ab43m-v_EemtpyezjMJUlLiAOsY06WGbEwNwKMGZW_XmttqP1ZPbyoQTxG1tZrmFSWkGtfiAKUM6MAR7Ao1aCFr34X21nD7R2j0DDiukXE_KNSiw1-yWwKjOeCa7uBOmsgZLMY8ACmNH_wVTA9MGTY3PMIgEb4Y1bDKsz5KqoWuBhe9xgoWuyf23MzgNT4VIGGeKsERylMQiha3jePmlHYkNUDohN6mz4mehigCn1WGViuEv_jygl3xLp7wwGtv4NRY0bJZNqlm3eIBYcHG_fcMDNaD3A7MMT4NxcwbcQ-y1Dr2clfgH8lP4eyTww55lWvqMDgrouYdY_ph6zEQ4lXmx6rgcTgyFeP2AveXcnPlm1QY_BhxZ-IRg3sNPRIUdKKsfkk6WTtdS23I2tbZlbF9AxPvUt-28CuonudsL3JI_Fb7Z9F6eUfCpr8zTXzODN9Ma&key=AIzaSyCYXbAb5oATfgJRzDY7v7_wNhQ6F7PltAM')"></div><div class="photo-item" style="background-image:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=600&photoreference=Ab43m-tivwyeqb4BYGL1DAR3lEyDwX6EnBcis4oXEk65wzvD45aixTc488AUzrdGf_xIjsNzkCpJOoGJOtanHE5yMVBp75UAKpF0_2DD0MIoqzpds15BXfKsmpzbk9q5t3DO6hJlirpdMWIjXb6yFo98jYSTExuiwDhzz572imdr4YGNmtW4WsiQuSrK_GY-Cta-BLwOhfVKRMEMDQpXtyo2Wk_8x7mSwvZVn0G0MhY7V2HSE59tLtb--tfabx7ZaVwQgLv9Ulc5kBwKXoT8bbHN_dpxRaYIJjUK_vbCLXVKdoaJKWoEIMbhi8XaSPeq-Lbfz1xHo2-vRJDOE0gTfLF4CtZjYR9VOWrv-N9RCK6R0kbouW22aVg-NtC4uxsqizg7IHEgcQErWxhOoVlCUVP-vcmKh9HuHAzkZEzFT4bFUVn-GYppnCcvwewP2cQ6RQ&key=AIzaSyCYXbAb5oATfgJRzDY7v7_wNhQ6F7PltAM')"></div><div class="photo-item" style="background-image:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=600&photoreference=Ab43m-s8vlIM8ldpWOZRb2xFxV747uY5-EeKTRj2trdVSVlYnT7g2289W3hz07Y9RZ0c6bHEJJjI1jtf0BmPrvRV_W56yWB8Za3E1Bz-G0EMWlIJm5UHYZWX-_uIlShrVbaEBbaLo4opxuXZMOMb_IvMHJZ6V_UdTGLyGxsRgYGw4GjjhHMmb7oJbZsFqL5QTR-v8mK_TOuD2JX148F6P3JkGe9WPQtFXPn3CREQZTmgMdOqkd24VKnVGt-ugwHKNcTDt7LLzjCJ3sshh-lNgJheY3c4ANqFb28DtR31IdUyGYEBIIbPu6moTrEVE4Ci4aqrNi15FCFFem4bmyuRGwLu1r2G_o5VRlaPbNPw4DmjVtNWOt4Uk_il_KF1kMZYyfX9B1lMsUSlRfFOo4x8jsYnoHXTxGl_XN2OFcupFel8D2VuaIrdwmbCRAjaF2hbqJP8&key=AIzaSyCYXbAb5oATfgJRzDY7v7_wNhQ6F7PltAM')"></div></div>
   </div>
 </section>
 
@@ -283,16 +285,19 @@ Abbiamo apprezzato tantissimo la sua disponibilità, serietà, professionalità 
       <div class="contact-card"><div class="contact-icon">📞</div><div class="contact-label">Telefono</div><div class="contact-value"><a href="tel:+39 051 407 2172">+39 051 407 2172</a></div></div>
       <div class="contact-card"><div class="contact-icon">📍</div><div class="contact-label">Indirizzo</div><div class="contact-value">V. Augusto Murri,  61/2, 40137 Bologna</div></div>
       <div class="contact-card"><div class="contact-icon">🏛</div><div class="contact-label">Specializzazione</div><div class="contact-value">Avvocato</div></div>
+      <div class="contact-card" style="text-align:left">
+  <div class="contact-icon" style="text-align:center">🕐</div>
+  <div class="contact-label" style="text-align:center;margin-bottom:12px">Orari</div>
+  <table style="font-size:13px;width:100%"><tr><td style="padding:5px 16px 5px 0;">Lunedì</td><td style="color:rgba(255,255,255,0.8);">09:30–13 / 15–18</td></tr><tr><td style="padding:5px 16px 5px 0;font-weight:700;color:var(--gold)">Martedì</td><td style="color:#fff;font-weight:700;color:var(--gold)">09:30–13 / 15–18</td></tr><tr><td style="padding:5px 16px 5px 0;">Mercoledì</td><td style="color:rgba(255,255,255,0.8);">09:30–13 / 15–18</td></tr><tr><td style="padding:5px 16px 5px 0;">Giovedì</td><td style="color:rgba(255,255,255,0.8);">09:30–13 / 15–18</td></tr><tr><td style="padding:5px 16px 5px 0;">Venerdì</td><td style="color:rgba(255,255,255,0.8);">09:30–13 / 15–18</td></tr><tr><td style="padding:5px 16px 5px 0;">Sabato</td><td style="color:#e53e3e;">Chiuso</td></tr><tr><td style="padding:5px 16px 5px 0;">Domenica</td><td style="color:#e53e3e;">Chiuso</td></tr></table>
+</div>
     </div>
   </div>
 </section>
 
-<div class="banner">
-  <div class="container">
-    <h2>Vuoi un sito come questo per il tuo studio?</h2>
-    <p>Simplo crea siti web professionali in 24 ore per studi legali, notai e professionisti.</p>
-    <a href="https://buy.stripe.com/8x25kC7mo39M0bN1Mv1B601" class="btn-primary">Scopri Simplo →</a>
-  </div>
+<div id="buy-banner">
+  <p class="dt">Ti piace questo sito? Il tuo potrebbe essere identico — online in 5 giorni per €99</p>
+  <p class="mob">Vuoi un sito così? €99</p>
+  <a href="https://buy.stripe.com/8x25kC7mo39M0bN1Mv1B601" target="_blank" class="stripe">Inizia ora →</a>
 </div>
 
 <footer>
